@@ -1,0 +1,44 @@
+:root{
+  --bg: #abe0fa;
+  --card: #ffffff;
+  --accent: #3b82f6;
+  --error: #ef4444;
+  --success: #10b981;
+  --muted: #6b7280;
+}
+
+body{
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 24px;
+  color: #111827;
+}
+
+.app{
+  max-width: 640px;
+  margin: 24px auto;
+  background: var(--card);
+  padding: 20px 24px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+}
+
+header h1{ margin: 0 0 6px 0 }
+header p{ margin: 0 0 18px 0; color: var(--muted) }
+
+.personal-form .field{ margin-bottom: 12px }
+.personal-form label{ display:block; font-size: 14px; margin-bottom:6px }
+.personal-form input{ width:100%; padding:10px 12px; border:1px solid #e5e7eb; border-radius:6px; font-size:14px }
+.personal-form input:focus{ outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(59,130,246,0.08) }
+
+.error{ color: var(--error); font-size: 13px; margin-top:6px }
+.actions{ margin-top: 14px }
+.actions button{ background: var(--accent); color: white; padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer }
+.actions button[disabled]{ opacity: 0.6; cursor: not-allowed }
+
+.message{ margin-top: 12px; padding: 10px 12px; border-radius:6px }
+.message.success{ background: rgba(16,185,129,0.08); color: #065f46 }
+.message.error{ background: rgba(239,68,68,0.06); color: #7f1d1d }
+
+.note{ margin-top: 10px; color: var(--muted); font-size: 13px }
